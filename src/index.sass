@@ -1,3 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Nunito:wght@400;700&family=Roboto&display=swap');
 body
-  background-color: #282c34
+  background-color: #030239
+  color: #fff
+  font-family: "Nunito", sans-serif
+  font-size: 20px
+  line-height: 1.5
+
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 700
+
+
+.text__base
   color: #61dafb
+
+
+.bg__base
+  background: #61dafb
+  color: #111
+
+
+.form-control
+  background-color: rgba(#61dafb, .1)
+  border: 1px solid rgba(#61dafb, .5)
+  color: #fff
+  height: 55px
+  &:focus
+    background-color:  rgba(#61dafb, .1) !important
+    box-shadow: none
+    outline: none
+    color: #fff
+
+
+
+.todo__list
+  padding: 0
+  margin: 0
+  border-radius: 5px
+  overflow: hidden
+  li
+    padding: 10px 20px
+    list-style: none
+    display: flex
+    &:nth-of-type(even)
+      background: rgba(#fff, .1)
+    &:nth-of-type(odd)
+      background: rgba(#61dafb, .1)
+    span:first-child
+      margin-right: 10px
+      color: #61dafb
+      cursor: pointer
+    span:last-child
+      cursor: pointer
+      margin-left: 10px
+
+.clear__list
+  color: #FF4A00
+  text-decoration: underline
+  display: inline-block
+  margin: 20px auto 0
+  cursor: pointer
+.trash__can
+  color: #FF4A00
+.edit__can
+  color: #9f09ff
+  cursor: pointer
+.alert
+  border: none
+  padding: 5px 20px
+  font-size: 16px
+  text-align: center
